@@ -33,14 +33,14 @@ height: ${height}vh;
 @media (prefers-color-scheme: dark) {
 
 #demo {
-color: blue;
+color: black;
 }
 }
 
 @media (prefers-color-scheme: light) {
 
 #demo {
-color: blue;
+color: black;
 }
 }
 
