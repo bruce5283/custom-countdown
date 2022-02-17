@@ -40,7 +40,7 @@ color: black;
 @media (prefers-color-scheme: light) {
 
 #demo {
-color: black;
+color: red;
 }
 }
 
