@@ -25,6 +25,7 @@ window.function = function (time, fweight, align, fsize, width, height) {
 #demo {
 font-weight: ${fweight};
 text-align: ${align};
+font-family: verdana;
 font-size: ${fsize}px;
 width: ${width}vw;
 height: ${height}vh;
@@ -33,14 +34,14 @@ height: ${height}vh;
 @media (prefers-color-scheme: dark) {
 
 #demo {
-color: black;
+color: red;
 }
 }
 
 @media (prefers-color-scheme: light) {
 
 #demo {
-color: red;
+color: blue;
 }
 }
 
@@ -65,7 +66,7 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = minutes + "m " + seconds + "l";
+  document.getElementById("demo").innerHTML = minutes + "m " + seconds + " seconds remaining in rest time";
 
   // If the count down is finished, write some text
   if (distance < 0) {
