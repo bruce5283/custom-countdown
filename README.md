@@ -20,4 +20,4 @@ The `glide.json` file should be mostly self-explanatory, except for the `type`s.
 
 The implementation file has comments explaining it.
 
-If you make a change to your `glide.json` or code when you’re building your column, click the “Reload” button in the column configurator in Glide, which causes Glide to unload your old manifest and code.  If you don’t, you won’t see your changes take effect in the Data Editor.
+If you make a change to your `glide.json` or code when you’re building your column, click the “Reload” button in the column configurator in Glide, which causes Glide to unload your old manifest and code.  If you don’t, you won’t see your changes take effect in the Data Editor. Try it out to see all the cool things you can do with glide!
