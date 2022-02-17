@@ -10,6 +10,7 @@ window.function = function (time, fweight, align, fsize, width, height) {
   fsize = fsize.value ?? "20";
   width = width.value ?? "100";
   height = height.value ?? "100";
+  color = "blue";
 
   let ht = `<!DOCTYPE html>
 <html>
@@ -26,7 +27,7 @@ window.function = function (time, fweight, align, fsize, width, height) {
 font-weight: ${fweight};
 font-family: verdana;
 text-align: ${align};
-color: blue;
+color: ${color};
 font-size: ${fsize}px;
 width: ${width}vw;
 height: ${height}vh;
