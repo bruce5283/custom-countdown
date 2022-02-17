@@ -25,6 +25,7 @@ window.function = function (time, fweight, align, fsize, width, height) {
 #demo {
 font-weight: ${fweight};
 font-family: verdana;
+color: red;
 text-align: ${align};
 font-size: ${fsize}px;
 width: ${width}vw;
@@ -43,11 +44,6 @@ color: white;
 #demo {
 color: black;
 }
-}
-
-p {
-color: blue;
-font-family: verdana;
 }
 
 </style>
