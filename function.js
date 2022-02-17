@@ -25,7 +25,7 @@ window.function = function (time, fweight, align, fsize, width, height) {
 #demo {
 font-weight: ${fweight};
 text-align: ${align};
-color: blue;
+text-color: blue;
 font-size: ${fsize}px;
 width: ${width}vw;
 height: ${height}vh;
