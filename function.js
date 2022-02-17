@@ -19,13 +19,14 @@ window.function = function (time, fweight, align, fsize, width, height) {
   </head>
   <body>
    <!-- Display the countdown timer in an element -->
-<p style ="color:blue;" id="demo"></p>
+<p id="demo"></p>
 <style>
 
 #demo {
 font-weight: ${fweight};
+font-family: verdana;
 text-align: ${align};
-text-color: blue;
+color: blue;
 font-size: ${fsize}px;
 width: ${width}vw;
 height: ${height}vh;
