@@ -41,7 +41,7 @@ color: red;
 @media (prefers-color-scheme: light) {
 
 #demo {
-color: #00C2CB;
+color: #12A89E;
 }
 }
 
