@@ -56,7 +56,6 @@ var countDownDate = new Date("${time}").getTime();
 var x = setInterval(function() {
   //Load Audio
   var timeoutAudio = document.getElementByID("timeout_audio");
-  timeoutAudio.src = "http://soundbible.com/grab.php?id=1252&type=mp3";
   timeoutAudio.load();
 
   // Get today's date and time
