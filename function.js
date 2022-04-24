@@ -20,7 +20,6 @@ window.function = function (time, fweight, align, fsize, width, height) {
   <body>
    <!-- Display the countdown timer in an element -->
 <p id="demo"></p>
-<audio id = "timeout_audio"></audio>
 <style>
 
 #demo {
@@ -54,9 +53,6 @@ var countDownDate = new Date("${time}").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
-  //Load Audio
-  var timeoutAudio = document.getElementByID("timeout_audio");
-  timeoutAudio.load();
 
   // Get today's date and time
   var now = new Date().getTime();
