@@ -20,6 +20,7 @@ window.function = function (time, fweight, align, fsize, width, height) {
   <body>
    <!-- Display the countdown timer in an element -->
 <p id="demo"></p>
+<audio id ="timeout_audio"></audio>
 <style>
 
 #demo {
@@ -50,6 +51,11 @@ color: #12A89E;
 // Set the date we're counting down to
 var countDownDate = new Date("${time}").getTime();
 
+var timeoutAudio = document.getElementByID("timeout_audio");
+
+timeoutAudio.src = "http://soundbible.com/grab.php?id=1252&type=mp3";
+timeoutAudio.load();
+
 // Update the count down every 1 second
 var x = setInterval(function() {
 
@@ -73,6 +79,7 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
+    timeoutAudio.play();
     demo.style.color = "#ff0000";
     document.getElementById("demo").innerHTML = "REST TIME EXPIRED";
   }
