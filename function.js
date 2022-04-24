@@ -20,6 +20,7 @@ window.function = function (time, fweight, align, fsize, width, height) {
   <body>
    <!-- Display the countdown timer in an element -->
 <p id="demo"></p>
+<audio id = "timeout_audio"></audio>
 <style>
 
 #demo {
