@@ -80,7 +80,6 @@ var x = setInterval(function() {
   if (distance < 0) {
     clearInterval(x);
     demo.style.color = "#ff0000";
-    timeoutAudio.play();
     document.getElementById("demo").innerHTML = "REST TIME EXPIRED";
   }
 }, 1000);
