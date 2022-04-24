@@ -51,11 +51,13 @@ color: #12A89E;
 // Set the date we're counting down to
 var countDownDate = new Date("${time}").getTime();
 
-var timeoutAudio = document.getElementByID("timeout_audio");
-
 
 // Update the count down every 1 second
 var x = setInterval(function() {
+  //Load Audio
+  var timeoutAudio = document.getElementByID("timeout_audio");
+  timeoutAudio.src = "http://soundbible.com/grab.php?id=1252&type=mp3";
+  timeoutAudio.load();
 
   // Get today's date and time
   var now = new Date().getTime();
@@ -78,6 +80,7 @@ var x = setInterval(function() {
   if (distance < 0) {
     clearInterval(x);
     demo.style.color = "#ff0000";
+    timeoutAudio.play();
     document.getElementById("demo").innerHTML = "REST TIME EXPIRED";
   }
 }, 1000);
